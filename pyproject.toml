@@ -1,0 +1,37 @@
+[project]
+name = "ai-career-copilot"
+version = "0.1.0"
+description = "AI Career Copilot - Your AI-powered career assistant."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit>=1.37.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "PyMuPDF>=1.24.0",
+    "python-docx>=1.1.0",
+    "langchain>=0.3.0",
+    "langchain-openai>=0.3.0",
+    "openai>=1.0.0",
+    "langgraph>=1.2.0",
+    "faiss-cpu>=1.8.0",
+    "sqlalchemy>=2.0.0",
+    "alembic>=1.13.0",
+    "psycopg[binary]>=3.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

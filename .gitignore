@@ -1,0 +1,79 @@
+# --- Secrets / env ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.secrets/
+.secrets.toml
+.streamlit/secrets.toml
+secrets.toml
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+pip-log.txt
+
+# --- Testing / coverage / caches ---
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.tox/
+.nox/
+
+# --- Type checkers / linters ---
+.dmypy.json
+dmypy.json
+
+# --- DB / vector store / local data ---
+*.sqlite
+*.sqlite3
+*.db
+*.faiss
+index.faiss
+store.json
+chroma/
+faiss_index/
+vector_store/
+data/
+uploads/
+*.pdf
+*.docx
+
+# --- IDEs / editors ---
+.idea/
+.vscode/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+.spyderproject
+.ropeproject
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs / temp ---
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
